@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  height: 100vh;
+  width: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-img {
+  height: 100vh;
+  width: 60vw;
+  background-image: url(/bg.jpg);
+  background-size: cover;
+}
+
+.text {
+  position: absolute;
+  bottom: 40vh;
+  margin: 0 10rem 0 4rem;
+  padding-left: 2rem;
+}
+.text h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.side-img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-form {
+    width: 100vw;
+  }
+  .login-img {
+    display: none;
+  }
+}
+
+/* Form Section Styling */
+
+::selection {
+  color: #fff;
+  background: #5c5c5c;
+}
+.wrapper {
+  width: 380px;
+  padding: 7rem 2rem 5rem 2rem;
+  border-radius: 5px;
+  text-align: left;
+  margin: 0 auto;
+}
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.wrapper p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.wrapper a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #000000;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+  background: #000000;
+}
+
+.form-control {
+  -webkit-transition: none;
+  transition: none;
+  width: 3rem;
+  height: 4rem;
+  text-align: center;
+}
+
+.form-control:focus {
+  color: #3f4254;
+  background-color: #ffffff;
+  border-color: #884377;
+  outline: 0;
+}
+
+.form-control.form-control-solid {
+  background-color: #ffffff;
+  border-color: #f3f6f9;
+  color: #3f4254;
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+  background-color: #ffffff;
+  border-color: #ebedf3;
+  color: #3f4254;
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.form-control.form-control-solid {
+  border-color: rgb(172, 169, 169);
+}
